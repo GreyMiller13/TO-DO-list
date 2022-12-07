@@ -29,6 +29,7 @@ buttonADD.addEventListener('click', () => {
     // Создание элемента списка
     let li = document.createElement('li');
     li.id = 'task-li';
+    li.style.listStyleType = 'none';
     let div = document.createElement('div');
     let span = document.createElement('span');
 

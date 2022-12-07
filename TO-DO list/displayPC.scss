@@ -4,29 +4,10 @@ $buttonColor2 : #FF7276;
 $fontColor1: white;
 $fontColor1: lightgrey;
 
-@mixin TODO-list-style($gradient, $formWidth) {
-    
-    // ***Конфликт при вызове миксина TODO-list-style с другим форматом***
-
-    // %templateButton {
-    //     border: none;
-    //     background-color: $background;
-    //     cursor: pointer;
-    // }
-    
-    // %templateForm {
-    //     width: $formWidth;
-    //     border: 2px solid black;
-    //     background-color: $background;
-    // }
-    
-    // %templateFont {
-    //     font-family: 'Times New Roman', Times, serif;
-    //     font-size: 20px;
-    // }
+@mixin TODO-list-style-PC {
 
     body {
-        background: $gradient;
+        background: linear-gradient(to bottom, #cb0000, #ff0086);
         background-repeat: no-repeat;
         width: 100%;
         height: 870px;
@@ -44,15 +25,13 @@ $fontColor1: lightgrey;
         display: flex;
         flex-direction: column;
         align-items: center;
-        //@extend %templateFont;
         font-family: 'Times New Roman', Times, serif;
         font-size: 20px;
     }
     
     .add_new_task {
         height: 30px;
-        //@extend %templateForm;
-        width: $formWidth;
+        width: 500px;
         border: 2px solid black;
         background-color: $background;
     
@@ -70,12 +49,9 @@ $fontColor1: lightgrey;
         }
     
         button {
-            //@extend %templateButton;
             border: none;
             background-color: $background;
             cursor: pointer;
-
-            //@extend %templateFont;
             font-family: 'Times New Roman', Times, serif;
             font-size: 20px;
             color: $buttonColor1;
@@ -85,32 +61,36 @@ $fontColor1: lightgrey;
     
     .task_list {
         margin-top: 30px;
-        //@extend %templateForm;
-        width: $formWidth;
+        width: 500px;
         border: 2px solid black;
         background-color: $background;
-    
         display: flex;
         flex-direction: column;
     
         div button {
-            width: $formWidth;
+            width: 500px;
             display: flex;
             align-items: flex-end;
             justify-content: end;
         }
     
         button {
-            //@extend %templateButton;
             border: none;
             background-color: $background;
             cursor: pointer;
-            //@extend %templateFont;
             font-family: 'Times New Roman', Times, serif;
             font-size: 20px;
             color: $buttonColor2;
             width: 60px;
             height: 32px;
         }
+    }
+
+    .tasks_orientation {
+        display: flex;
+        flex-direction: row;
+        height: 20px;
+        width: 300px;
+        margin: 5px;
     }
 }

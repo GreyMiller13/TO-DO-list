@@ -1,167 +1,30 @@
 $displayPC : 1280px;
 $displayLaptop: 1024px;
 $displayTablet: 800px;
-$diplayLargeMobile: 640px;
-$displayMiniMobile: 330px; // не используется
+$displayMobile: 640px;
 
-$backgroundPC: linear-gradient(to bottom, #cb0000, #ff0086);
-$backgroundLaptop: linear-gradient(to bottom, #dd720e, #db8850);
-$backgroundTablet: linear-gradient(to bottom, #e4e124, #d1c557);
-$backgroundLMobile: linear-gradient(to bottom, #84e00a, #90f169);
-$backgroundMMobile: linear-gradient(to bottom, #1be96a, #529644);
-$formStandartWidth: 500px;
-$formSmallWidth: 250px;
-// $formStandartHeight:
-// $formSmallHeight:
-
-$background : white;
-$buttonColor1 : lightblue;
-$buttonColor2 : #FF7276;
-$fontColor1: white;
-$fontColor1: lightgrey;
-
-// *** Похоже, что импорт миксина из другого файла невозможен (mixins.scss) ***
-//@import url(./mixins.scss);
-
-@mixin TODO-list-style($gradient, $formWidth) {
-    
-    // ***Конфликт при вызове миксина TODO-list-style с другим форматом***
-
-    // %templateButton {
-    //     border: none;
-    //     background-color: $background;
-    //     cursor: pointer;
-    // }
-    
-    // %templateForm {
-    //     width: $formWidth;
-    //     border: 2px solid black;
-    //     background-color: $background;
-    // }
-    
-    // %templateFont {
-    //     font-family: 'Times New Roman', Times, serif;
-    //     font-size: 20px;
-    // }
-
-    body {
-        background: $gradient;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 870px;
-    }
-    
-    .header-title {
-        color: $fontColor1;
-        font-size: 25px;
-        font-weight: bold;
-        text-align: center;
-        margin-top: 40px;
-    }
-    
-    .todo-list-main-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        //@extend %templateFont;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 20px;
-    }
-    
-    .add_new_task {
-        height: 30px;
-        //@extend %templateForm;
-        width: $formWidth;
-        border: 2px solid black;
-        background-color: $background;
-    
-        div {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-    
-        input {
-            padding-left: 5px;
-            width: 440px;
-            height: 30px;
-            border: none;
-        }
-    
-        button {
-            //@extend %templateButton;
-            border: none;
-            background-color: $background;
-            cursor: pointer;
-
-            //@extend %templateFont;
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 20px;
-            color: $buttonColor1;
-            width: 60px;
-        }
-    }
- 
-    .task_list {
-        margin-top: 30px;
-        //@extend %templateForm;
-        width: $formWidth;
-        border: 2px solid black;
-        background-color: $background;
-    
-        display: flex;
-        flex-direction: column;
-
-        ul {
-            list-style-type: none;
-        }
-    
-        div button {
-            width: $formWidth;
-            display: flex;
-            align-items: flex-end;
-            justify-content: end;
-        }
-    
-        button {
-            //@extend %templateButton;
-            border: none;
-            background-color: $background;
-            cursor: pointer;
-            //@extend %templateFont;
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 20px;
-            color: $buttonColor2;
-            width: 60px;
-            height: 32px;
-        }
-    }
-
-    .tasks_orientation {
-        display: flex;
-        flex-direction: row;
-        height: 20px;
-        width: 300px;
-        margin: 5px;
-    }
-}
+@import './displayPC.scss';
+@import './displayLaptop.scss';
+@import './displayTablet.scss';
+@import './displayMobile.scss';
+@import './displayMiniMobile.scss';
 
 @media screen and (min-width: $displayPC) {
-    @include TODO-list-style($backgroundPC, $formStandartWidth);
+    @include TODO-list-style-PC;
 }
 
 @media screen and (min-width: $displayLaptop) and (max-width: $displayPC) {
-    @include TODO-list-style($backgroundLaptop, $formStandartWidth);
+    @include TODO-list-style-laptop;
 }
 
 @media screen and (min-width: $displayTablet) and (max-width: $displayLaptop) {
-    @include TODO-list-style($backgroundTablet, $formStandartWidth);
+    @include TODO-list-style-tablet;
 }
 
-@media screen and (min-width: $diplayLargeMobile) and (max-width: $displayTablet) {
-    @include TODO-list-style($backgroundLMobile, $formSmallWidth);
+@media screen and (min-width: $displayMobile) and (max-width: $displayTablet) {
+    @include TODO-list-style-mobile;
 }
 
-@media screen and (max-width: $diplayLargeMobile) {
-    @include TODO-list-style($backgroundMMobile, $formSmallWidth);
+@media screen and (max-width: $displayMobile) {
+    @include TODO-list-style-miniMobile;
 }
