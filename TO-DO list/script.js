@@ -73,11 +73,14 @@ function CheckboxHandler() {
     let checkboxCollections = document.querySelectorAll('#checkbox-id');
     for (const checkbox of checkboxCollections) {
         checkbox.addEventListener('change', () => {
+            //Доступ к соседнему элементу для перечеркивания / восстановления текста
+            let parent = checkbox.parentNode;
+            let span = parent.lastChild;
             if(checkbox.checked) {
-                //Доступ к соседнему элементу для перечеркивания текста
-                let parent = checkbox.parentNode;
-                let span = parent.lastChild;
                 span.style.textDecoration = 'line-through';
+            }
+            else {
+                span.style.textDecoration = 'none';
             }
         })
     }
