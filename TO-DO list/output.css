@@ -1,0 +1,412 @@
+@media screen and (min-width: 1280px) {
+  body {
+    background: linear-gradient(to bottom, #cb0000, #ff0086);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 870px;
+  }
+  .header-title {
+    color: lightgrey;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .todo-list-main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+  }
+  .add_new_task {
+    height: 30px;
+    width: 500px;
+    border: 2px solid black;
+    background-color: white;
+  }
+  .add_new_task div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .add_new_task input {
+    padding-left: 5px;
+    width: 440px;
+    height: 30px;
+    border: none;
+  }
+  .add_new_task button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    color: lightblue;
+    width: 60px;
+  }
+  .task_list {
+    margin-top: 30px;
+    width: 500px;
+    border: 2px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  .task_list ul {
+    list-style-type: none;
+  }
+  .task_list div button {
+    width: 500px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+  }
+  .task_list button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    color: #FF7276;
+    width: 60px;
+    height: 32px;
+  }
+  .tasks_orientation {
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    width: 300px;
+    margin: 5px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  body {
+    background: linear-gradient(to bottom, #dd720e, #db8850);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 870px;
+  }
+  .header-title {
+    color: lightgrey;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .todo-list-main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+  }
+  .add_new_task {
+    height: 30px;
+    width: 500px;
+    border: 2px solid black;
+    background-color: white;
+  }
+  .add_new_task div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .add_new_task input {
+    padding-left: 5px;
+    width: 440px;
+    height: 30px;
+    border: none;
+  }
+  .add_new_task button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    color: lightblue;
+    width: 60px;
+  }
+  .task_list {
+    margin-top: 30px;
+    width: 500px;
+    border: 2px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  .task_list ul {
+    list-style-type: none;
+  }
+  .task_list div button {
+    width: 500px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+  }
+  .task_list button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    color: #FF7276;
+    width: 60px;
+    height: 32px;
+  }
+  .tasks_orientation {
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    width: 300px;
+    margin: 5px;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+  body {
+    background: linear-gradient(to bottom, #e4e124, #d1c557);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 870px;
+  }
+  .header-title {
+    color: lightgrey;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .todo-list-main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+  }
+  .add_new_task {
+    height: 30px;
+    width: 500px;
+    border: 2px solid black;
+    background-color: white;
+  }
+  .add_new_task div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .add_new_task input {
+    padding-left: 5px;
+    width: 440px;
+    height: 30px;
+    border: none;
+  }
+  .add_new_task button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    color: lightblue;
+    width: 60px;
+  }
+  .task_list {
+    margin-top: 30px;
+    width: 500px;
+    border: 2px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  .task_list ul {
+    list-style-type: none;
+  }
+  .task_list div button {
+    width: 500px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+  }
+  .task_list button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    color: #FF7276;
+    width: 60px;
+    height: 32px;
+  }
+  .tasks_orientation {
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    width: 300px;
+    margin: 5px;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 800px) {
+  body {
+    background: linear-gradient(to bottom, #84e00a, #90f169);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 870px;
+  }
+  .header-title {
+    color: lightgrey;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .todo-list-main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+  }
+  .add_new_task {
+    height: 30px;
+    width: 250px;
+    border: 2px solid black;
+    background-color: white;
+  }
+  .add_new_task div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .add_new_task input {
+    padding-left: 5px;
+    width: 440px;
+    height: 30px;
+    border: none;
+  }
+  .add_new_task button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    color: lightblue;
+    width: 60px;
+  }
+  .task_list {
+    margin-top: 30px;
+    width: 250px;
+    border: 2px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  .task_list ul {
+    list-style-type: none;
+  }
+  .task_list div button {
+    width: 250px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+  }
+  .task_list button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    color: #FF7276;
+    width: 60px;
+    height: 32px;
+  }
+  .tasks_orientation {
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    width: 300px;
+    margin: 5px;
+  }
+}
+@media screen and (max-width: 640px) {
+  body {
+    background: linear-gradient(to bottom, #1be96a, #529644);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 870px;
+  }
+  .header-title {
+    color: lightgrey;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .todo-list-main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+  }
+  .add_new_task {
+    height: 30px;
+    width: 250px;
+    border: 2px solid black;
+    background-color: white;
+  }
+  .add_new_task div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .add_new_task input {
+    padding-left: 5px;
+    width: 440px;
+    height: 30px;
+    border: none;
+  }
+  .add_new_task button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    color: lightblue;
+    width: 60px;
+  }
+  .task_list {
+    margin-top: 30px;
+    width: 250px;
+    border: 2px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  .task_list ul {
+    list-style-type: none;
+  }
+  .task_list div button {
+    width: 250px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+  }
+  .task_list button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    color: #FF7276;
+    width: 60px;
+    height: 32px;
+  }
+  .tasks_orientation {
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    width: 300px;
+    margin: 5px;
+  }
+}
+
+/*# sourceMappingURL=output.css.map */
